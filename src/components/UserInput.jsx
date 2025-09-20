@@ -10,8 +10,10 @@ export const UserInput = () => {
           <label for='annual'>Annual Investment</label>
           <input type='number' id='annual' required />
         </p>
+      </div>
+      <div className='input-group'>
         <p>
-          <label for='expected'>Expected Revenue</label>
+          <label for='expected'>Expected Return</label>
           <input type='number' id='expected' required />
         </p>
         <p>
