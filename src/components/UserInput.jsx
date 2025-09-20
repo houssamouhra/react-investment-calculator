@@ -5,8 +5,8 @@ export const UserInput = ({ onChangeInput, userInput }) => {
         <p>
           <label htmlFor='initial'>Initial Investment</label>
           <input
-            value={userInput.initiaInvestment}
-            onChange={(e) => onChangeInput("initiaInvestment", e.target.value)}
+            value={userInput.initialInvestment}
+            onChange={(e) => onChangeInput("initialInvestment", e.target.value)}
             type='number'
             id='initial'
             required
@@ -15,8 +15,8 @@ export const UserInput = ({ onChangeInput, userInput }) => {
         <p>
           <label htmlFor='annual'>Annual Investment</label>
           <input
-            value={userInput.anualInvestment}
-            onChange={(e) => onChangeInput("anualInvestment", e.target.value)}
+            value={userInput.annualInvestment}
+            onChange={(e) => onChangeInput("annualInvestment", e.target.value)}
             type='number'
             id='annual'
             required
