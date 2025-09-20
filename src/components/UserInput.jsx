@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { calculateInvestmentResults } from "@/util/investment";
 
 export const UserInput = () => {
   const [userInput, setUserInput] = useState({
@@ -22,7 +21,7 @@ export const UserInput = () => {
     <section id='user-input'>
       <div className='input-group'>
         <p>
-          <label for='initial'>Initial Investment</label>
+          <label htmlFor='initial'>Initial Investment</label>
           <input
             value={userInput.initiaInvestment}
             onChange={(e) => handleChange("initiaInvestment", e.target.value)}
@@ -32,7 +31,7 @@ export const UserInput = () => {
           />
         </p>
         <p>
-          <label for='annual'>Annual Investment</label>
+          <label htmlFor='annual'>Annual Investment</label>
           <input
             value={userInput.anualInvestment}
             onChange={(e) => handleChange("anualInvestment", e.target.value)}
@@ -44,7 +43,7 @@ export const UserInput = () => {
       </div>
       <div className='input-group'>
         <p>
-          <label for='expected'>Expected Return</label>
+          <label htmlFor='expected'>Expected Return</label>
           <input
             value={userInput.expectedReturn}
             onChange={(e) => handleChange("expectedReturn", e.target.value)}
@@ -54,7 +53,7 @@ export const UserInput = () => {
           />
         </p>
         <p>
-          <label for='duration'>Duration</label>
+          <label htmlFor='duration'>Duration</label>
           <input
             value={userInput.duration}
             onChange={(e) => handleChange("duration", e.target.value)}
